@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><!--根据不同时间来判断问候
+            1.内置时间判断
+            2.多分支语句抉择
+            3.图片可选
+            4.div元素显示问候语-->
+<body>
+    <div class="greeting">欢迎光临</div>
+    <script>
+        var div=document.querySelector('.greeting')
+        var date=new Date();
+        var h = date.getHours();
+        if ( h <12 ) {
+            div.innerHTML='上午';
+        }
+        else if (h<18){
+            div.innerHTML='下午';
+        }
+        else{
+            div.innerHTML='晚上';
+        }
+    </script>
+</body>
+</html>

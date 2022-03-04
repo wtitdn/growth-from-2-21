@@ -1,0 +1,23 @@
+<!DOCTYPE html><!-- 触发 响应机制 事件-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>123</div>
+    <script>
+        //点击一个按钮弹出对话框
+        //事件有三部分 事件源（事件影响的对象 事件类型（点击 鼠标移动 事件处理程序（函数赋值
+        var div =document.querySelector('div');
+             div.onclick = function(){
+            alert('111');
+        //另外一种写法 先声明函数 再点击进行调用
+        //div后面的鼠标动作有onclick mouseover mouseout onmousemove鼠标移动 onmouseup鼠标弹起 onmousedown鼠标按下
+        
+        }
+    </script>
+</body>
+</html>

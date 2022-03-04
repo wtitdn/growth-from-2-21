@@ -1,0 +1,10 @@
+element.属性 获取内置属性值
+element.getAttribute('属性') 主要获得自定义属性 程序员自己自定义的属性
+设置修改自定义属性 element.setAttribute('属性名',数值)
+但是element.className='设置的' 用setattribute则是（'class',设置的）;
+移除 element.removeAttribute('属性名')
+H5中的自定义属性用data-为开头并进行赋值
+取得自定义属性 标签名字.dataset 取得所有自定义属性
+              标签名字.dataset.某个自定义属性名字 取得某个自定义属性的值
+              标签名字.dataset['某个自定义属性名字']
+              如果自定义属性的名字有两个单词 要用驼峰命名法

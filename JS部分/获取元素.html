@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="c"></div>
+    
+    <script>
+        //因为是从上往下加载 所以这个脚本得写在id下面 都是驼峰命名法//
+        var lis = document.getElementById('c')
+        //里面括号写参数 大小写敏感的字符串 返回的是一个dom的element对象 驼峰命名法//
+        var ol = document.getElementsByTagName('')
+        //返回的带有标签名的对象的集合 用伪数组的方式呈现 不管对象有几个 返回的一直是伪数组//
+        console.log(ol[0].getElementsByTagName(''))
+        //调用所获取的伪数组的时候必须加上【】 指代是哪个ol才能接着调用获取//
+        var clas = document.getElementsByClassName('')
+        //通过类名获取元素，还是用伪数组的形式存储 H5能用 但是其他的不能用//
+        var qs= document.querySelector('')
+        // 仅仅得到符合条件选择器（可以加类.xx可以加标签 xxx 加ID #xxx 注意：必须都要加符号）的第一个对象//
+        var qs1= document.querySelectorAll('')
+        // 返回的是指定选择器所有对象//
+        var bodyele=document.body;
+        //获取body//
+        var htmlele=document.documentElement;
+        //获取html元素//
+    </script>
+</body>
+</html>

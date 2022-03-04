@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="grandfather">
+    <div class="dad">
+        <div class="son">
+            <span>x</span>
+        </div>
+    </div>
+</div> 
+<ul>
+    <li>12</li>
+    <li>12</li>
+    <li>12</li>
+    <li>12</li>
+    <li>12</li>
+</ul>
+    <script>
+        var erzi = document.querySelector('span');//parentNode 只能用单一选择不能加all
+        console.log(erzi.parentNode);//返回的是父节点
+        console.log(erzi);
+        var father=document.querySelector('ul');
+        console.log(father.childNodes);//返回的是儿子节点 返回的是一个集合 得到所有的子节点 包含元素节点 和文本节点 一般不提倡使用childnodes
+        console.log(father.children);//仅仅得到元素节点
+        console.log(father.firstChild);//得到第一个节点 包括文本节点
+        console.log(father.lastChild);//得到最后一个节点 包括文本节点
+        console.log(father.firstElementChild);//得到第一个节点 只有元素节点
+        console.log(father.lastElementChild);//得到最后一个节点 只有元素节点 这两个都是ie9才支持
+        console.log(father.children[x]);//得到第几个节点 开发最常用 数组的长度-1就是最后一个元素
+    </script>
+</body>
+</html>
