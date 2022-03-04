@@ -1,0 +1,5 @@
+.search input::placeholder{
+    /*改字体 改颜色*/
+    font-size: 19px;
+    color: blue;
+}

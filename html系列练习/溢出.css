@@ -1,0 +1,6 @@
+overflow{
+    overflow: visible;
+    overflow: hidden;/*溢出父元素部分不显示*/
+    overflow: scroll;/*溢出部分用滚动条显示，就算没超出，也有滚动条*/
+    overflow: auto;/*根据是否溢出，自己决定要不要滚动条*/
+}

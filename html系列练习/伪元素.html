@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .class{
+            background-color: black;
+            color: white;
+            width: 600px;
+            height: 400px;
+            
+        }
+        .class::before{
+            content: '噶';
+            color: azure;
+        }/*伪元素必须存在content 没有内容也要加
+            width和hight都不会生效 因为默认是行内
+            要换行转行 display  inline 不换行display inline-block */
+    </style>
+</head>
+<body>
+    <div class="class">d</div>
+</body>
+</html>

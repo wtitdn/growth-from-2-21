@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        /*父子标签 子浮动 父没高 下一个标准流盒子会受影响而提到前面
+        1.给父加高 但是有时候不能用固定
+        2.标签法 在父元素内容的 最后一个加一个块级元素 给添加的元素设置 clear：both
+        比如    <div class="dad">
+                <div class="right"></div>
+                 <div class="left"></div>
+                 <div class="clearfix"></div>
+                 </div>       
+                 下面的加在style里面     
+                 .clerfix{
+            clear: both;
+                        }
+        但是加了额外的标签，会让网页变得复杂
+        3.单伪元素法 ：：before after
+            <div class="dad clearfix">
+        <div class="right"></div>
+        <div class="left"></div>
+        <div class="clearfix"></div>
+    </div>
+     .clear::after{
+         content:'';
+         display:block;
+         clear:both;
+         为了兼容性 还要加入这两行
+         visbility:hiden;
+         height:0;
+         可以直接使用，不用加额外标签 要用的直接在后面加个标签clear
+         4.双伪元素：能解决外边距塌陷
+         5.overflow：hiden 直接给父元素上这个 方便
+         直接在父的css标签上面加上
+     }
+        */
+        .clerfix{
+            /*清除两侧浮动影响*/
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="dad clearfix">
+        <div class="right"></div>
+        <div class="left"></div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        div{
+            position: relative;/*相对位置
+            相对于自己之前的位置发生偏移
+            四者都在的话只有top和left会起作用*/
+        }
+       .hhh {
+            position:absolute;
+            top:50%;
+        }
+        /*absolute是相对于上一个定位的父级进行的定位，
+        如果父级没定位，找上一个有定位的，
+        子绝父相：孩子绝对定位 父亲相对定位
+        top从上数 从指定位置开始往下布置
+        脱标 改变标签的显示特点：变成行内块（不设置宽高默认没有
+        left 从左数*/
+        .kkk {
+            position: fixed;
+            
+            
+            
+            /*固定定位 无论怎么移动页面 位置都不变
+            不占位置 已经脱标
+            相当于浏览器进行移动
+            同样具有行内块特点*/
+            /*如果两个盒子都定位了 
+            默认网页中在下面的元素优先级更高 会覆盖上面的元素
+            配合定位z-index 可以用来调节优先级
+            z-index 整数 取值越大，显示越上面 默认值是0
+            标准流的元素会大于浮动大于定位
+            */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

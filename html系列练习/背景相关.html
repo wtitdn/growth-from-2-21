@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+        width: 40px;
+        height: 60px;
+        background-color: #fff;/*背景颜色*/
+        background-image: url();/*背景图片*/
+        background-repeat: no-repeat;
+        /*noreapt不平铺 repeat平铺 repeat x 横着 repeat y 竖着*/
+        background-position: 0 0;/*第一个表示水平 第二个表示垂直
+        方位词 第一个right left 第二个 bottom top
+        center通用 放在中间
+        还能用px来调节
+        如果position两个参数用方位词就会导致以某个边为起点开始显示*/
+        /*background:#fff url() no-repeat 0 0 连写 除了pos的都可以不分先后顺序
+        但是pos如果用的是英文单词 就可以不在意顺序*/
+        background-image: linear-gradient( red,blue);
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,.6));
+        background-image: radial-gradient(red, yellow, green);
+         /*颜色渐变*/
+         /*后者是css3的渐变 加上了透明度 从哪里到哪里渐变要加一个to*/
+         /*第三个是从中心发散的渐变*/
+    }   
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

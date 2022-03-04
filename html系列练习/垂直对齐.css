@@ -1,0 +1,8 @@
+    img {
+        vertical-align: middle;/*元素的中线对齐*/
+        vertical-align: baseline;/*默认从基线对齐*/
+        vertical-align:bottom;/*元素的顶端和行中最低的元素对齐，用来贴在上个盒子的底部*/
+        vertical-align: top;/*元素的顶端和行中最高的元素对齐，用来贴在上个盒子的顶部*/
+        /*浏览器把行内和行内块标签当做文字处理，默认是文字，但是如果将标签转为块 就能消除基线带来的影响*/
+        /*如果要将图居中，因为img默认是行内块标签，可以用text-align进行处理*/
+    }

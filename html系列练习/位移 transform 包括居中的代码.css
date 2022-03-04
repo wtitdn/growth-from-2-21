@@ -1,0 +1,31 @@
+.transform{
+    transform: translate(50%);
+    /*CSS3动画效果translate(x,y) 指定向Y轴和X轴移动
+    有百分比和像素写法 正数向右下*/
+    transform: translateX(50%);/*单独移动X轴和Y轴的写法 但是要注意XY都要大写*/
+}
+.box{
+    position: absolute;
+    left:50%;
+    right:50%;
+    /* margin-left: ;
+    margin-top: ; */
+    transform: 50%,50%;
+    /*自动实现盒子居父元素中心
+    两个方法都可以 
+    但是如果还有transform 注意层叠 或者直接复合写法
+    灵活使用*/
+}
+.transform .xuanzhuan{
+    transform: rotate();
+    /*旋转 小括号里面填的是角度 单位是deg
+    测试旋转必须要用transition属性 不然看不见往那里转
+    正数顺时针 负数逆时针*/
+    transform-origin: (left top);/*方位词（center+四个方位词） 百分比 像素 方位词结合就是某个角*/
+    transform: translate() rotate();
+    /*复合属性 中间空格隔开 先t后r 一边滚一边前进
+    先r后t 则是先旋转 再位移 改变坐标轴的方向就会把位移的方向带偏
+    如果一边走一边转的话 只能用复合 如果分开写 会被层叠性叠掉*/
+    transform: scale(50%,60%);
+    /*表示缩放 前者为X轴的缩放 后者为Y轴的缩放 */
+}

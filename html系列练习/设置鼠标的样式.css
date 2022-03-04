@@ -1,0 +1,6 @@
+ s:hover{
+    cursor: default;
+    cursor: pointer;/*一个小手*/
+    cursor: move;/*十字箭头 表示可以移动*/
+    cursor: text;/*文本光标*/
+ }

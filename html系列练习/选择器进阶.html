@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p a {
+            color:red;
+        }/*父选择器 前面是父 后面是子 相当于按照标签来更改 修改的是一整个后代*/
+        div>a {
+            color:blue;
+        }/*子选择器 标准是大于号 只修改某个子*/
+        h1,
+        h2{
+            color: green;/*多选择器 批量选择*/
+        }
+        p.dh{
+            color: grey;
+        }/*对特定的类进行操作*/
+        div p a:hover{
+            color:brown;/*用于鼠标悬停时候更改相应属性*/
+        }
+    </style>
+</head>
+<body>
+    <p>不变</p>
+    <div>
+        <p>不变<a href="">红色</a></p>
+    </div>
+    <div>
+        <a href="">蓝色</a>
+    </div>
+    <h1>111</h1>
+    <h2>222</h2>
+    <p class="dh">灰色</p>
+</body>
+</html>

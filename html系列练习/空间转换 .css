@@ -1,0 +1,27 @@
+.t3{
+    transform:translate3d(x,y,z) ;
+    /*用于实现元素在空间缩放旋转平移
+    z轴方向和视线方向相同*/
+        /*另一种写法*/
+    transform: translateX();
+    transform: translateY();
+    transform: translateZ();
+    /*取值正负 像素 百分比都可以*/
+    /*但是默认情况下 无法观察到Z轴的移动距离产生的效果 这时候就要用perspective来用*/
+    /*perspective 加在父级盒子里面*/
+    perspective: 800px;
+    /*建议数值在800-1200 这个也能用来调节图片的大小 从中心缩放 相当transform：scale*/
+    transform:rotate3d(x,y,z);
+    transform: rotateX();
+    transform: rotateY();
+    transform: rotateZ();
+    /*rotateZ是绕着图片中心旋转*/
+    /*rotateX是绕着X轴转 图片的横轴中心*/
+    /*~~~~~~Y是绕着Y轴转 图片的竖轴中心*/
+}
+    .scale{
+        transform: scale3d();
+        transform: scaleX();
+        transform: scaleY();
+        transform: scaleZ();
+    }/*用到空间缩放的效果不太多*/

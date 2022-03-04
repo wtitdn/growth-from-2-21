@@ -1,0 +1,7 @@
+.bg{
+    background-size:contain ;/*等比例缩放，可能盒子会有留白*/
+    background-size: cover;/*等比例缩放，直到盒子没有空白*/
+    background-size: 1635px;/*按照像素缩放，常用*/
+    background-size: 15%;/*用百分比缩放*/
+    /*background连写 color image repeat Postition/size*/
+}

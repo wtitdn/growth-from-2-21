@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>div透明度变化</title>
+        <style type="text/css">
+            *{margin: 0px;padding: 0px;}
+            .hover-con{margin: 100px auto;padding:0px 20px;width:90%; text-align: center;border: 1px solid #000000;}
+            .ech-fade-out,.ech-fade-in{
+                transition: all .4s;
+                display: inline-block;
+                margin: 20px;
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+                text-align: center;
+                background:#0069D9;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+            .ech-fade-out:hover {
+                opacity: .6;
+            }
+             
+            .ech-fade-in {
+                opacity: .5;
+            }
+             
+            .ech-fade-in:hover {
+                opacity: 1;
+            }   
+ 
+        </style>
+    </head>
+    <body>
+        <div class="hover-con">
+            <span class="ech-fade-out">fade-out</span>
+            <span class="ech-fade-in">fade-in</span>
+        </div>
+    </body>
+</html>

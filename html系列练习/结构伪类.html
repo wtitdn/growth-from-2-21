@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!--结构伪类就是用标签的关系找标签
+                            在同类的下面寻找第几个孩子-->
+    <style>
+        li:first-child{
+            color: blue;
+        }
+        li:last-child{
+            color:darkblue;
+
+        }
+        li:nth-child(2){/*这个小括号里面可以填公式 比如偶数2n
+                        奇数2n-1 4的倍数 4n 前五个-n+5*/ 
+            color:pink;
+
+        }
+        li:nth-last-child(2){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

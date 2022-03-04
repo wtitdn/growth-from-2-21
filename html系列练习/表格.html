@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table><!--table是表格整体，table里面也有width和height和border参数但是一般用CSS-->
+    <caption><b>大标题</b></caption><!--caption是表格的大标题-->
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>班级</th><!--小表格内字体加粗-->
+            <th>座号</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>  
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td><!--合并单元格rowspan列合并colspan行合并-->
+        </tr>  <!--示例：<td colspan:"3">就是横向右合并三个单元格-->
+    </tfoot><!--tfoot这些方便浏览器处理代码-->
+
+    </table><!--tr构建一行，td的个数决定有几列-->
+</body>
+</html>

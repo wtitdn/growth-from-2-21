@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        .box{
+         height: 60px;
+         background-color: #fff;
+         border-top: 3px solid orange;
+        }
+        .box a {
+            text-decoration: none;
+            color: black;
+            height: 60px;;
+            width: 80px;;
+            display: inline-block;
+            text-align: center;/*文字要居中*/
+            line-height: 60px;
+            font-size: 12px;
+        }
+        .box a:hover{
+            background-color:blue;
+            color: wheat;
+
+        }
+        .box1{
+         height: 60px;
+         background-color: #fff;
+         border-top: 3px solid orange;
+        }
+        .box1 a {
+            text-decoration: none;/*如果是list就把text改成list 去掉符号*/
+            color: black;
+            height: 60px;
+            padding:0 16px;
+            display: inline-block;
+            text-align: center;/*文字要居中*/
+            line-height: 60px;
+            font-size: 12px;
+        }
+        .box1 a:hover{
+            background-color:blue;
+            color: wheat;
+
+        }
+    </style>
+</head>
+<body><!--先设置宽高背景色 再内容 调节内容位置
+    (居中用text-align line-height 行高 字号 fontsize) 
+    文字细节-->
+    <div class="box">
+        <a href="#">新浪导航</a>
+        <a href="#">新浪导航</a>
+        <a href="#">新浪导航</a>
+        <a href="#">新浪导航</a>
+    </div>
+    <!--优化：这样子无论导航的字数有多少 都是稳定的间距 不会空太多-->
+    <div class="box1">
+        <a href="#">新浪导航</a>
+        <a href="#">新浪导航新浪导航</a>
+        <a href="#">新浪导航</a>
+        <a href="#">新浪导航</a>
+    </div>
+</body>
+</html>

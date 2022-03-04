@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .nav{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;/*没加宽高的话 margin的值是不生效的*/
+        }
+        .nav li{
+            float: left;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            transition: all 2.5s;
+            transform-style: preserve-3d;
+            /*transform: rotateX(-20deg) rotateY(30deg);调试的时候可以加上 方便观察*/
+        }
+        .nav li a{
+            display: block;
+            width: 100px;
+            height: 100px;
+            text-align:center;
+            color: white;
+        }
+        .nav li a:first-child{
+            position: absolute;
+            background-color: blue;
+            top: 0;
+            left: 0;
+            transform: translateZ(50px);
+        }
+        .nav li a:last-child{
+            background-color: red;
+            transform: rotateX(90deg) translateZ(50px);/*为什么是z 因为这时的坐标轴Z是穿过这个图片的 而不是人的视线*/
+        }
+        .nav li:hover{
+            transform: rotateX(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="">1</a>
+                <a href="">2</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

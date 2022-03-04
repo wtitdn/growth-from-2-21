@@ -1,0 +1,7 @@
+mask 遮罩
+banner 轮播
+short cut 快捷导航
+footer 页面底部区域
+侧导航 aside
+左箭头 prev
+右箭头 next

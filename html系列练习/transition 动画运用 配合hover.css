@@ -1,0 +1,6 @@
+trs{
+    transition: width 2s;
+    /*配合hover 谁变化谁加过渡属性 很多都变就直接ALL+时间
+    hover填写更改之后的属性*/
+
+}

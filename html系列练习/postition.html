@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .{
+            position: relative;
+            left: 60px;
+            top: 60px;
+            /*相对自己之前的位置发生偏移，但是原位置仍有个看不见的div占住 
+            仍然具有标签原有的显示模式 改变位置参照自己原来的位置
+            向右边移动用left 向下移动用bottom
+            如果四个都有 只有left和top生效*/
+        }
+        .absolute{
+                    /*先找已经定位的父级，如果有这样的父级 就以这个父为参照物进行定位
+                    有父 但父没有定位，就以浏览器为参照进行定位
+                    1.不再占有标准流位，脱离标准流
+                    2.宽高还是生效，在一行一行共存，具备了行内块的特点*/
+                    position: absolute;
+                    right: 0;
+                    width: 50px;
+                    height: 60px;
+                    color:pink;
+        }
+        /*子绝父相：
+    </style>
+</head>
+<body>
+    <div class="absolute">box</div>
+</body>
+</html>

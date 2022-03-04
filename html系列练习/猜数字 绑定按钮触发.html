@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>//脚本执行在用户点击触发之后 在title部分后面 body前面进行编写
+            function main (){
+        function getRandom (min,max){
+            return Math.floor(Math.random()*( max - min + 1 ) )+min;
+        }
+        var random=getRandom(1,50);
+        var time = 10
+        while (time>0){
+            var num = prompt("猜1-50的整数,你还有"+time+"次机会")
+            judge=isNaN(num)
+            if(judge==true||num<1||num>50||num%1!=0){
+                alert("你猜你吗呢");//判断是否为整数num%1!=0
+                time--;// judge=isNaN(num)
+                        //if(judge==true 判断是否有其他字符
+                continue;
+            }
+            if (num>random){
+                alert ("大了");
+                time--;
+            }
+            else if (num<random){
+                alert ("小了");
+                time--;
+            } 
+            else if (num==random){
+                alert ("对了");
+                break;
+            }
+            }
+            if (time==0){
+                alert("傻狗")
+            }
+            console.log(random)
+        
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="按钮" onclick="main()">
+</body>
+</html>

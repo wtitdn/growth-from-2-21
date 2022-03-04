@@ -1,0 +1,9 @@
+.hide{
+    /*占位置的*/
+    visibility: hidden;
+    /*不占位置的 常用*/
+    display: none;
+}
+.show{
+    display: block;/*一般配合hover使用*/
+}

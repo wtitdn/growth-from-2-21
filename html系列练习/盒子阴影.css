@@ -1,0 +1,10 @@
+.bs{
+    box-shadow: 7px;
+    /*h-shadow 必须 水平偏移
+    v-shadow 必须 垂直偏移
+    blur 模糊度
+    spread 阴影扩大
+    color 阴影颜色
+    inset 把阴影改成内部阴影 外阴影什么都不加
+    要一行一行写下来*/
+}

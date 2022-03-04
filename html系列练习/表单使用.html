@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=""><!--action表示的是后端，有了form reset才能用-->
+    文本框<input type="text" placeholder="哼哼啊啊啊啊啊啊"><!--placeholder占位符，用于提示用户-->
+    <br>
+    密码框<input type="password"><!--密码框-->
+    <br>
+    这是单选框<input type="radio"name="sex" checked id="nan"> <label for="nan"> <img src="" alt="男"></label>
+    <input type="radio"name="sex" id="nv" ><label for="nv">女</label>
+    <br><!--实现单选功能要加上name相当于类别，一个类只有一个，checked表示默认选中,lable中的for之后的要和id内的一模一样，也可以删去for和id-->
+    这是多选框<input type="checkbox">
+    <br>
+    这是文件选择<input type="file">
+    <br><!--file改成multiple是多个文件选中-->
+    这是提交按钮<input type="submit">
+    <br>
+    这是重置<input type="reset" value="不要">
+    <br>
+    这是按钮 绑着js用<input type="button" value="按钮名字" onclick="alert('sry')" ><!--value可以用来改任何按钮的名字-->
+    <br>
+    <select><!--下拉菜单选中-->
+        <option >1</option>
+        <option >2</option>
+        <option >3</option>
+        <option selected>请选择~</option>
+        <!--默认选择4-->
+    </select>
+    <br>
+    这是文本框 美化用CSS<textarea > </textarea><!--文本框-->
+</form>
+</body>
+</html>

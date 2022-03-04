@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="外联式.css"><!--外联式的引用 用link导入-->
+    <style>
+    /* css注释格式*/
+    /*上面的是外联式的css引用*/
+    /* css选择器 标签选择器 用于寻找标签 类似于h1 p  */
+    /* 所有的P都是一个颜色*/
+    p   {
+        color: green ;/*如果有两个color 后面的会覆盖前面的颜色*/
+        font-size: 40px;/* px是像素 fontsize是字号*/
+        font-weight: 14px;/*控制字体的粗细*/
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /*控制字体的样式*/
+        font-style: italic;/*字体倾斜 italic是斜 normal就是正的*/
+        background-color: aliceblue;/* 背景颜色*/
+        width: 40px;height: 20px;/*宽度高度*/
+        line-height: 1.5;/*px表示像素，纯数字表示字号的几倍*/
+        }  
+    .ccc{
+        color: aqua;
+        font:italic 40 50px/1.5 宋体;/*font简写 可以省略前两个
+                                    font简写的是 倾斜 加粗 字号/行高 字体*/
+        }/*类选择器 不能用数字下划线开头 前面的名字就是类别 绑定class */
+    #dd{
+        color: blue;
+         }
+    /* id选择器 配合js使用 绑定 ID*/
+    /* *{
+        color：red *全选 全部变
+    }*/
+    </style><!--这种是内嵌式的CSS-->
+</head>
+<body>
+    <p>hello world</p> <!--p就是段落的意思-->
+    <div style="color: red;">行内式</div>
+    <!--行内式仅影响写入的行 一般配合js使用-->
+    <div>没有任何影响</div>
+    <div class="ccc">类选择器</div><!--如果要插入多个类 在class后面一个类后接空格-->
+    <div id="dd">lanse</div>
+</body>
+</html>

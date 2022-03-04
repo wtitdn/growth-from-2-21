@@ -1,0 +1,26 @@
+/* 实现多个状态之间的过程 并且要可控(重复播放 最终画面 是否暂停)  */
+/*两个之间的*/
+    @keyframes identifier {
+        from{
+            /*里面都是属性 wide hight*/
+        }
+        to {}
+    }
+/*五个画面之间的*/
+    @keyframes identifier2 {
+        0%{}
+        20%{}
+        40%{}
+        80%{}
+        100%{}
+    }
+/*使用动画的代码 名字 时间*/
+    .animation{
+        animation: identifier 1s;
+    }
+/*动画的复合属性 动画名称 时长 速度曲线 延迟时间（延迟多久才开始） 重复次数（无限用infinite） 动画方向（alternate执行结束反向执行一次和infinite结合就是无限循环） 执行完毕时候的状态（forward动画停留在结束的状态） 不分先后顺序 两个时间值的话 第一个表示动画时长第二个表示延迟时间*/
+    .animation{
+    animation: identifier 1s ;
+}
+/*速度曲线 加速 减速 匀速linear 分步动画steps（3）也叫逐帧动画 配合精灵图才会用
+    定义动画的时候可以用from to 也能用百分比 分的step取决于精灵图的个数*/
